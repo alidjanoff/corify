@@ -1,0 +1,215 @@
+.header {
+  width: 100%;
+  padding: 16px 0;
+  box-shadow: 1px 0 20px 1px #ffffff50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #202424;
+  .container {
+    .row {
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        width: 164px;
+        height: 50px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .navBar {
+        .navList {
+          display: flex;
+          .navItem {
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 700px;
+            cursor: pointer;
+            a {
+              &:hover {
+                color: #ce8339;
+              }
+              &.active {
+                color: #ce8339;
+              }
+            }
+          }
+        }
+      }
+      .userArea {
+        display: flex;
+        gap: 32px;
+        .cart {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          font-size: 18px;
+          cursor: pointer;
+          .count {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: #ce8339;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+          }
+          &:hover {
+            svg {
+              path {
+                color: #ce8339;
+              }
+            }
+          }
+        }
+        .login {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          font-size: 18px;
+          &:hover {
+            svg {
+              path {
+                color: #ce8339;
+              }
+            }
+            span {
+              color: #ce8339;
+            }
+          }
+        }
+        .logOut {
+          border: 0;
+          outline: 0;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          font-size: 18px;
+          cursor: pointer;
+          &:hover {
+            color: #ce8339;
+            svg {
+              path {
+                color: #ce8339;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .cartBox {
+    width: 400px;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #202424;
+    box-shadow: 1px 1px 10px 1px #ffffff50;
+    padding: 16px;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+    &.isOpen {
+      transform: translateX(0%);
+      opacity: 1;
+      visibility: visible;
+    }
+    .cartHead {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 16px;
+      margin-bottom: 50px;
+      svg {
+        path {
+          cursor: pointer;
+          &:hover {
+            color: #ce8339;
+          }
+        }
+      }
+    }
+    .cartList {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      .empty {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+      .cartItem {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+        border-bottom: 1px solid #ce8339;
+        .carImg {
+          width: 100px;
+          height: 50px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .carInfo {
+          p {
+            color: #ce8339;
+            margin-bottom: 5px;
+            font-weight: 700;
+          }
+        }
+      }
+      gap: 16px;
+      a {
+        display: inline-block;
+        background-color: #ce8339;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 15px;
+        border: 1px solid transparent;
+        &:hover {
+          background-color: #202424;
+          border-color: #ce8339;
+          color: #ce8339;
+        }
+      }
+    }
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    z-index: 1;
+    background-color: transparent;
+    visibility: hidden;
+    opacity: 0;
+    &.isOpen {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

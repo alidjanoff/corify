@@ -1,0 +1,57 @@
+.notFound {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #202424;
+  .container {
+    .row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      h2 {
+        font-size: 50px;
+        font-weight: 900;
+        .four {
+          font-weight: 700;
+        }
+        .zero {
+          font-size: 80px;
+          font-weight: 500;
+          animation: zeroAnim 4s ease infinite;
+        }
+      }
+      p {
+        font-size: 24px;
+        font-weight: 500;
+      }
+      a {
+        color: aqua;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@keyframes zeroAnim {
+  0% {
+    color: #fff;
+  }
+  25% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  100% {
+    color: #fff;
+  }
+}

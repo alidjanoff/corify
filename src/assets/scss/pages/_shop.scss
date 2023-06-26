@@ -1,0 +1,18 @@
+.shop {
+  padding: 86px 0;
+  .container {
+    .row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 25px 0;
+      .carsBox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+  }
+}

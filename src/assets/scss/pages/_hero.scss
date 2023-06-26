@@ -1,0 +1,107 @@
+.heroSection {
+  padding-top: 86px;
+  .row {
+    justify-content: center;
+    align-items: center;
+    .hero {
+      position: relative;
+      .heroImg {
+        width: 100%;
+        height: 700px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .heroInfo {
+        position: absolute;
+        top: 25%;
+        left: 6%;
+        font-weight: 800;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .slideInfo {
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+        .slideTitle {
+          font-size: 90px;
+          letter-spacing: -5px;
+          margin-left: -5px;
+        }
+        .slideDetails {
+          font-family: "Great Vibes", cursive;
+          font-size: 48px;
+          letter-spacing: -1.2px;
+          font-weight: 400;
+          margin: -38px 0 0 40px;
+          line-height: 1.5;
+          span {
+            font-family: "Great Vibes", cursive;
+            color: #ffa646;
+          }
+        }
+        .price {
+          font-size: 52px;
+          color: #03fe97;
+          font-weight: 700;
+          font-family: "Cabin";
+          margin-top: 15px;
+          line-height: 1.5;
+          span {
+            &:nth-child(1) {
+              font-size: 30px;
+              font-family: "Cabin";
+            }
+            &:nth-child(2) {
+              font-size: 20px;
+              font-family: "Cabin";
+              font-weight: 400;
+            }
+          }
+        }
+        .priceDetails {
+          font-size: 16px;
+          font-family: "Cabin";
+          font-weight: 400;
+        }
+        .btns {
+          margin-top: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            padding: 0 20px;
+            height: 45px;
+            border-radius: 2px;
+            background-color: #fff;
+            color: #fff;
+            gap: 10px;
+            font-family: "Cabin";
+            &.primaryBtn {
+              background-color: #fff;
+              color: #293957;
+            }
+            &.secondaryBtn {
+              background-color: #ce8339;
+            }
+            &:hover {
+              background-color: #293957;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// font-family: 'Great Vibes', cursive;

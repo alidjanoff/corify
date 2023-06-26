@@ -1,0 +1,83 @@
+.ourCarsSection {
+  padding: 50px 0;
+  .container {
+    .row {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .ourCarsHead {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 50px;
+        h2 {
+          font-size: 24px;
+          font-weight: 800;
+        }
+        .categoryList {
+          display: flex;
+          gap: 5px;
+          .categoryItem {
+            padding: 8px 15px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #7a8395;
+            border-radius: 3px;
+            cursor: pointer;
+            &.active {
+              background-color: #ce8339;
+              color: #fff;
+            }
+            &:hover {
+              background-color: #ce8339;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .carsBox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .carCard {
+          flex: 23.44444% 0 0;
+          .cardImg {
+            width: 100%;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .carInfo {
+            padding: 10px 0;
+            .carType {
+              font-size: 14px;
+              color: #7a8395;
+              margin-bottom: 5px;
+            }
+            .carTitle {
+              font-weight: 700;
+              font-size: 20px;
+              font-family: "Cabin";
+              margin-bottom: 20px;
+              cursor: pointer;
+              &:hover {
+                text-decoration: underline;
+                color: #ce8339;
+              }
+            }
+            .carPrice {
+              font-size: 24px;
+              color: #ce8339;
+              font-weight: 700;
+              font-family: "Montserrat", sans-serif;
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.carCard {
+    flex: 23.44444% 0 0;
+    .cardImg {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .carInfo {
+      padding: 10px 0;
+      .carType {
+        font-size: 14px;
+        color: #7a8395;
+        margin-bottom: 5px;
+      }
+      .carTitle {
+        font-weight: 700;
+        font-size: 20px;
+        font-family: "Cabin";
+        margin-bottom: 20px;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+          color: #ce8339;
+        }
+      }
+      .carPrice {
+        font-size: 24px;
+        color: #ce8339;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        font-style: italic;
+      }
+    }
+  }
