@@ -1,0 +1,123 @@
+.lightMode {
+  // Globals
+  a {
+    color: #202424;
+  }
+
+  //   Header
+  .header {
+    box-shadow: 1px 0 20px 1px #ffffff50;
+    background-color: #fff;
+    .container {
+      .row {
+        .logo {
+          a {
+            img {
+              filter: invert(100%);
+            }
+          }
+        }
+        .navBar {
+          .navList {
+            .navItem {
+              a {
+                &:hover {
+                  color: #ce8339;
+                }
+                &.active {
+                  color: #ce8339;
+                }
+              }
+            }
+          }
+        }
+        .userArea {
+          .cart {
+            .count {
+              background-color: #ce8339;
+              color: #000;
+            }
+            svg {
+              path {
+                color: #000;
+              }
+            }
+            &:hover {
+              svg {
+                path {
+                  color: #ce8339;
+                }
+              }
+            }
+          }
+          .login {
+            &:hover {
+              svg {
+                path {
+                  color: #ce8339;
+                }
+              }
+              span {
+                color: #ce8339;
+              }
+            }
+          }
+          .logOut {
+            color: #000;
+            svg {
+              path {
+                color: #000;
+              }
+            }
+            &:hover {
+              color: #ce8339;
+              svg {
+                path {
+                  color: #ce8339;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .cartBox {
+      background-color: #fff;
+      box-shadow: 1px 1px 10px 1px #ffffff50;
+      .cartHead {
+        svg {
+          path {
+            &:hover {
+              color: #ce8339;
+            }
+          }
+        }
+      }
+      .cartList {
+        .cartItem {
+          border-bottom: 1px solid #ce8339;
+          .carInfo {
+            p {
+              color: #ce8339;
+            }
+          }
+          .remove {
+            background-color: #ff000080;
+          }
+        }
+        a {
+          background-color: #ce8339;
+          color: #000;
+          &:hover {
+            background-color: #fff;
+            border-color: #ce8339;
+            color: #ce8339;
+          }
+        }
+      }
+    }
+  }
+
+//   Hero
+
+}

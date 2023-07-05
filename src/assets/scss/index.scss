@@ -14,7 +14,11 @@
 @import "./pages/register";
 @import "./pages/login";
 @import "./pages/not-found";
+@import "./pages/cart";
 
 // Sections
 @import "./pages/hero";
 @import "./pages/our-cars";
+
+// Light mode style
+@import "./light-mode";

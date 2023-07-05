@@ -42,14 +42,14 @@ const Header = () => {
               <span className="count">0</span>
               <FaShoppingCart />
             </div>
+            <button className="logOut">
+              LOGOUT
+              <FaSignOutAlt />
+            </button>
             <Link className="login" to="/login">
               <FaUserCircle />
-              <span>LOG IN</span>
+              <span>LOGIN</span>
             </Link>
-            {/* <button className="logOut">
-              LOG OUT
-              <FaSignOutAlt />
-            </button> */}
           </div>
         </div>
       </div>
@@ -61,21 +61,28 @@ const Header = () => {
         <ul className="cartList">
           <div className="empty">
             <p>Cart is Empty</p>
-            <Link to="/shop">Buy new car</Link>
+            <Link to="/shop" onClick={() => setCartIsOpen(false)}>
+              Buy new car
+            </Link>
           </div>
           <li className="cartItem">
             <div className="carImg">
-              <img src="" alt="" />
+              <img src="" alt="car-img" />
             </div>
             <div className="carInfo">
-              <p className="carTitle">Title</p>
+              <p className="carTitle">Car name</p>
               <div className="nums">
-                <p className="carPrice">Price: 0$</p>
-                <p className="quantity">Quantity: 0</p>
+                <p className="carPrice">Price: 0.00$</p>
+                <p className="quantity">Quantity: 1</p>
               </div>
             </div>
+            <div className="remove">
+              <p>Remove Car</p>
+            </div>
           </li>
-          <Link to="/cart">View on Cart</Link>
+          <Link to="/cart" onClick={() => setCartIsOpen(false)}>
+            View on Cart
+          </Link>
         </ul>
       </div>
       <div

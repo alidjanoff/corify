@@ -1,4 +1,3 @@
-// Icons
 import {
   FaTwitter,
   FaFacebookF,
@@ -13,7 +12,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <p className="copyright">
-            Corify Made by <span>Tarlan Alijanov</span> ©{" "}
+            All rights reserved <span>Tarlan Alijanov</span> ©{" "}
             {new Date().getFullYear()}
           </p>
           <ul className="socialList">
